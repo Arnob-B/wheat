@@ -18,15 +18,19 @@ const Nav = () => {
           clickme
         </button>
       </div>
-      <div className="fixed top-0 left-0 right-0">
-        <nav className=" hidden sm:flex flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
-          <But text="Home"></But>
-          <But text="Founders"></But>
-          <But text="Contact Us"></But>
-          <But text="Waiting List"></But>
-          <But text="Testimonials"></But>
-        </nav>
-      </div>
+      {
+        /*
+        <div className="fixed top-0 left-0 right-0">
+          <nav className=" hidden sm:flex flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
+            <But text="Home"></But>
+            <But text="Founders"></But>
+            <But text="Contact Us"></But>
+            <But text="Waiting List"></But>
+            <But text="Testimonials"></But>
+          </nav>
+        </div>
+        */
+      }
       {vis &&
         <nav className="flex flex-col sm:flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
           <But text="Home"></But>
