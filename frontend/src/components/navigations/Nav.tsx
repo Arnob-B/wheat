@@ -17,8 +17,8 @@ const Nav = () => {
   return (
     <>
       <Drawer>
-        <div className="fixed top-0 left-0 right-0">
-          <div className="sm:hidden">
+        <div className="fixed top-0 left-0 right-0 z-[10]">
+          <div className="sm:hidden fixed top-0 left-0">
             <button onClick={() => {
               setVis(prev => !prev);
             }}>
@@ -39,13 +39,13 @@ const Nav = () => {
             </div>
           }
           {vis &&
-            <nav className="flex flex-col sm:flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
+            <nav className="flex flex-col sm:flex-row h-auto w-full py-2 pt-4 justify-center align-middle bg-[#160D04]">
               <But text="Home" link="/home"></But>
               <But text="Founders" link="/founders"></But>
               <But text="Contact Us" link="/contact"></But>
               <But text="Waiting List" link="/waiting"></But>
-              <DrawerTrigger>
-                <But text="testimonials" link=""></But>
+              <DrawerTrigger className="flex justify-start">
+                <But text="Testimonials" link=""></But>
               </DrawerTrigger>
             </nav>
           }
