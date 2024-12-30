@@ -1,4 +1,4 @@
-import wheatLogo from "./../assets/wheatLogo.png"
+import wheatLogo from "./../../assets/wheatLogo.png"
 export default function() {
   return (
     <div className="flex justify-start items-center m-0 p-0">

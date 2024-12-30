@@ -1,11 +1,13 @@
 //import './App.css'
 
-import Benefits from "./components/Benefits"
-import Header1 from "./components/Header1"
-import Nav from "./components/Nav"
-import Recipe from "./components/Recipe"
-import Source from "./components/Source"
-import Vid from "./components/Vid"
+import Benefits from "./components/home/Benefits"
+import Consumption from "./components/home/Consumption"
+import Header1 from "./components/home/Header1"
+import Nav from "./components/home/Nav"
+import Quality from "./components/home/Quality"
+import Recipe from "./components/home/Recipe"
+import Source from "./components/home/Source"
+import Vid from "./components/home/Vid"
 
 function App() {
   return (
@@ -38,6 +40,8 @@ function App() {
       While it may not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few examples of how some people use this generator are listed in the following paragraphs        
    `}></Source >
       <Recipe></Recipe>
+      <Consumption desc="hello"></Consumption>
+      <Quality desc="hello world"></Quality>
     </>
   )
 }

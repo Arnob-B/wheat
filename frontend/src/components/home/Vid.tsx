@@ -1,4 +1,4 @@
-import vid from "./../assets/wheatField.mp4"
+import vid from "../../assets/wheatField.mp4"
 
 const Vid = () => {
   return (

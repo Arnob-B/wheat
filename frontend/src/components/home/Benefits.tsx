@@ -24,7 +24,7 @@ export default function(props: {
       <div className="flex flex-col md:flex-row w-full justify-between items-center md:items-start gap-[2vw]">
         <div>
           <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/DO/PD/CZ/80513067/organic-black-wheat-seeds.jpg"
-            className="w-[28vw] rounded-lg" />
+            className="w-[28vw] rounded-lg shadow-black shadow-md" />
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2vw]">
           {
