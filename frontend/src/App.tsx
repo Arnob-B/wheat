@@ -3,6 +3,7 @@
 import Benefits from "./components/Benefits"
 import Header1 from "./components/Header1"
 import Nav from "./components/Nav"
+import Recipe from "./components/Recipe"
 import Source from "./components/Source"
 import Vid from "./components/Vid"
 
@@ -36,6 +37,7 @@ function App() {
 
       While it may not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few examples of how some people use this generator are listed in the following paragraphs        
    `}></Source >
+      <Recipe></Recipe>
     </>
   )
 }
