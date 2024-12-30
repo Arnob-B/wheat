@@ -1,15 +1,22 @@
-//import './App.css'
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Home from "@/route/Home"
-import Nav from "@/components/Nav"
-import Nav2 from "./components/Nav2"
+import Nav from "@/components/navigations/Nav"
+import Founders from "./components/founders/Founders"
+import ComingSoon from "./components/waitinglist/ComingSoon"
+import Contacts from "./components/contacts/ComingSoon"
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Nav />}>
           <Route path="home" element={<Home />}>
+          </Route>
+          <Route path="founders" element={<Founders />}>
+          </Route>
+          <Route path="waiting" element={<ComingSoon />}>
+          </Route>
+          <Route path="contact" element={<Contacts />}>
           </Route>
         </Route>
       </Routes>

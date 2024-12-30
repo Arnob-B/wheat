@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-
 function But(props: { text: string, link: string }) {
   const nav = useNavigate();
   return (
@@ -13,10 +12,6 @@ function But(props: { text: string, link: string }) {
 }
 const Nav = () => {
   const [vis, setVis] = useState<Boolean>(false);
-  const nav = useNavigate();
-  useEffect(() => {
-    nav("/home");
-  }, [])
   return (
     <>
       <div className="fixed top-0 left-0 right-0">
@@ -34,7 +29,7 @@ const Nav = () => {
               <But text="Founders" link="/founders"></But>
               <But text="Contact Us" link="/contact"></But>
               <But text="Waiting List" link="/waiting"></But>
-              <But text="Testimonials" link="/reviews"></But>
+              <But text="Testimonials" link="/"></But>
             </nav>
           </div>
         }
@@ -44,11 +39,12 @@ const Nav = () => {
             <But text="Founders" link="/founders"></But>
             <But text="Contact Us" link="/contact"></But>
             <But text="Waiting List" link="/waiting"></But>
-            <But text="Testimonials" link="/reviews"></But>
+            <But text="Testimonials" link="/"></But>
           </nav>
         }
       </div >
-      <Outlet></Outlet>
+      <div className="h-[4vw]"></div>
+      <Outlet ></Outlet>
     </>
   )
 }
