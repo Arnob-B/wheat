@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import { Drawer, DrawerTrigger } from "@/components/ui/drawer"
 import Reviews from "../testimonials/Review";
+import { Wheat } from "lucide-react"
 function But(props: { text: string, link: string }) {
   const nav = useNavigate();
   return (
@@ -14,36 +15,37 @@ function But(props: { text: string, link: string }) {
 }
 const Nav = () => {
   const [vis, setVis] = useState<Boolean>(false);
+  const navMap: Array<{ name: string, link: string }> = [
+    { name: "Home", link: "/home" },
+    { name: "Founders", link: "/founders" },
+    { name: "Contact", link: "/contact" },
+    { name: "Waiting List", link: "/waiting" },
+    { name: "Testimonials", link: "" },
+  ]
   return (
     <>
       <Drawer>
         <div className="fixed top-0 left-0 right-0 z-[10]">
-          <div className="sm:hidden fixed top-0 left-0">
+          <div className="sm:hidden fixed top-1 left-1">
             <button onClick={() => {
               setVis(prev => !prev);
             }}>
-              🌽
+              <Wheat></Wheat>
             </button>
           </div>
           {
             <div className="fixed top-0 left-0 right-0">
               <nav className=" hidden sm:flex flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
-                <But text="Home" link="/home"></But>
-                <But text="Founders" link="/founders"></But>
-                <But text="Contact Us" link="/contact"></But>
-                <But text="Waiting List" link="/waiting"></But>
+                {navMap.map(e => { if (e.link != "") return (< But text={e.name} link={e.link} />); })}
                 <DrawerTrigger>
-                  <But text="testimonials" link=""></But>
+                  <But text="Testimonials" link=""></But>
                 </DrawerTrigger>
               </nav>
             </div>
           }
           {vis &&
             <nav className="flex flex-col sm:flex-row h-auto w-full py-2 pt-4 justify-center align-middle bg-[#160D04]">
-              <But text="Home" link="/home"></But>
-              <But text="Founders" link="/founders"></But>
-              <But text="Contact Us" link="/contact"></But>
-              <But text="Waiting List" link="/waiting"></But>
+              {navMap.map(e => { if (e.link != "") return (< But text={e.name} link={e.link} />); })}
               <DrawerTrigger className="flex justify-start">
                 <But text="Testimonials" link=""></But>
               </DrawerTrigger>

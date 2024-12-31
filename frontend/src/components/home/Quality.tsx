@@ -3,7 +3,7 @@ export default function Quality(props: { desc: string }) {
     <div className="bg-[#9B9DA9] w-full p-[2vw] flex flex-col items-center">
       <div className="text-[5vw] font-extrabold text-black font-istok ">
         <h1>
-          Why to consume
+          Quality Assured
         </h1>
       </div>
       <div className="flex flex-col-reverse md:flex-row w-full justify-between items-center md:items-start gap-[2vw]">
