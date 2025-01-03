@@ -1,6 +1,6 @@
 function Cards(props: { heading: string, desc: string }) {
   return (
-    <div className="p-2 flex flex-col justify-start bg-white/30 backdrop-blur-lg rounded-lg shadow-lg overflow-scroll">
+    <div className="p-2 flex flex-col justify-start bg-white/30 backdrop-blur-lg rounded-lg shadow-lg">
       <div className="text-[#4B4949] mb-1 text-lg font-bold">
         {props.heading}
       </div>

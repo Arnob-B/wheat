@@ -6,7 +6,7 @@ import { Wheat } from "lucide-react"
 function But(props: { text: string, link: string, func?: Function }) {
   const nav = useNavigate();
   return (
-    <div className="px-1 m-2 border-0 border-white  w-auto h-auto text-[#F5DEB3] font-bold size-20" onClick={() => {
+    <div className="px-1 m-2 border-2 border-yellow-800  w-fit h-auto text-[#F5DEB3] font-bold size-20 hover:bg-yellow-800 hover:text-black hover:z-10 cursor-pointer" onClick={() => {
       if (props.link != "") nav(props.link);
       if (props.func) props.func();
     }}>
@@ -60,18 +60,7 @@ const Nav = () => {
         </div >
         <div className="h-[4vw]"></div>
         <Reviews content={
-          [
-            { name: "arnob", comment: "hello" },
-            { name: "sophia", comment: "Great work!" },
-            { name: "liam", comment: "Keep it up!" },
-            { name: "emma", comment: "Amazing effort!" },
-            { name: "oliver", comment: "This is fantastic!" },
-            { name: "ava", comment: "Well done!" },
-            { name: "noah", comment: "I love this!" },
-            { name: "mia", comment: "Awesome job!" },
-            { name: "elijah", comment: "Incredible progress!" },
-            { name: "isabella", comment: "So proud of this!" }
-          ]
+          []
         }></Reviews>
       </Drawer >
       <Outlet ></Outlet>

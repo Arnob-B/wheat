@@ -56,7 +56,7 @@ export default function(props: {
   >
 }) {
   return (
-    <div className="bg-wheatBg bg-cover w-full ">
+    <div className="bg-cover w-full " id="recipe">
       <div className="flex flex-col  p-[4vw]  backdrop-blur-[5px]">
         <div className="text-[5vw] text-red-400 font-istok font-bold">
           How to consume
