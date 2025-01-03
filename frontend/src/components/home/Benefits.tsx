@@ -4,7 +4,7 @@ function Cards(props: { heading: string, desc: string }) {
       <div className="text-[#4B4949] mb-1 text-lg font-bold">
         {props.heading}
       </div>
-      <div>
+      <div className="whitespace-pre-line">
         {props.desc}
       </div>
     </div>

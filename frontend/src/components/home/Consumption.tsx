@@ -8,7 +8,7 @@ export default function Consumption(props: { desc: string }) {
               Why to consume
             </h1>
           </div>
-          <div className="bg-white/20 backdrop-blur-lg border border-white/30 font-sans rounded-md w-auto shadow-xl p-6 text-white">
+          <div className="bg-white/20 backdrop-blur-lg border border-white/30 font-sans rounded-md w-auto shadow-xl p-6 text-[#FFFFFF] whitespace-pre-line">
             {props.desc}
           </div>
         </div>
