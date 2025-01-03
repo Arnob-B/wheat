@@ -2,7 +2,7 @@ import vid from "../../assets/wheatField.mp4"
 
 const Vid = () => {
   return (
-    <video className="h-full w-full  p-4 shadow-red-50" autoPlay loop>
+    <video className="h-full w-full shadow-red-50" autoPlay loop muted>
       <source
         src={vid}
         type="video/mp4"

@@ -1,6 +1,6 @@
-import { Card, CardTitle, CardFooter, CardHeader, CardContent, CardDescription } from "@/components/ui/card"
-import { DrawerClose, DrawerTitle, DrawerHeader, DrawerFooter, DrawerContent, } from "@/components/ui/drawer"
-import { Carousel, CarouselItem, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { Card, CardTitle, CardHeader, CardContent, CardDescription } from "@/components/ui/card"
+import { DrawerClose, DrawerTitle, DrawerHeader, DrawerContent, } from "@/components/ui/drawer"
+import { Carousel, CarouselItem, CarouselContent, } from "@/components/ui/carousel"
 import { CircleX } from "lucide-react"
 export default function Reviews(props: {
   content: Array<{

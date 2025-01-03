@@ -3,18 +3,22 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Drawer, DrawerTrigger } from "@/components/ui/drawer"
 import Reviews from "../testimonials/Review";
 import { Wheat } from "lucide-react"
-function But(props: { text: string, link: string, func: Function }) {
+function But(props: { text: string, link: string, func?: Function }) {
   const nav = useNavigate();
   return (
     <div className="px-1 m-2 border-0 border-white  w-auto h-auto text-[#F5DEB3] font-bold size-20" onClick={() => {
       if (props.link != "") nav(props.link);
-      props.func();
+      if (props.func) props.func();
     }}>
       {props.text}
     </div>
   )
 }
 const Nav = () => {
+  const nav = useNavigate();
+  useEffect(() => {
+    nav("/home");
+  }, []);
   const [vis, setVis] = useState<Boolean>(false);
   const navMap: Array<{ name: string, link: string }> = [
     { name: "Home", link: "/home" },
@@ -40,7 +44,7 @@ const Nav = () => {
               <nav className=" hidden sm:flex flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
                 {navMap.map(e => { if (e.link != "") return (< But text={e.name} link={e.link} />); })}
                 <DrawerTrigger>
-                  <But text="Testimonials" link="" func={() => { }}></But>
+                  <But text="Testimonials" link=""></But>
                 </DrawerTrigger>
               </nav>
             </div>

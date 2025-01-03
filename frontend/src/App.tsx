@@ -4,7 +4,7 @@ import Home from "@/route/Home"
 import Nav from "@/components/navigations/Nav"
 import Founders from "./components/founders/Founders"
 import ComingSoon from "./components/waitinglist/ComingSoon"
-import Contacts from "./components/contacts/ComingSoon"
+import Contacts from "./components/contacts/Contacts"
 function App() {
   return (
     <BrowserRouter>
