@@ -10,13 +10,13 @@ function Cards(props: { heading: string, desc: string, img: string }) {
   return (
     <div className="p-2 flex flex-col justify-start bg-white/30 backdrop-blur-lg rounded-sm shadow-lg">
       <div className="flex justify-center mb-2">
-        <img src={props.img} className="w-40 h-40 rounded-md"></img>
+        <img src={props.img} className="w-40 h-40 rounded-md shadow-black shadow-lg"></img>
       </div>
       <div className="m-2">
         <div className="text-black mb-1 text-lg font-bold">
           {props.heading}
         </div>
-        <div>
+        <div className="text-xs">
           {props.desc}
         </div>
       </div>

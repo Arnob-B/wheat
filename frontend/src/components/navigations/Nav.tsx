@@ -40,7 +40,7 @@ const Nav = () => {
               <nav className=" hidden sm:flex flex-row h-auto w-full py-2 justify-center align-middle bg-[#160D04]">
                 {navMap.map(e => { if (e.link != "") return (< But text={e.name} link={e.link} />); })}
                 <DrawerTrigger>
-                  <But text="Testimonials" link=""></But>
+                  <But text="Testimonials" link="" func={() => { }}></But>
                 </DrawerTrigger>
               </nav>
             </div>
@@ -55,7 +55,6 @@ const Nav = () => {
           }
         </div >
         <div className="h-[4vw]"></div>
-        <Outlet ></Outlet>
         <Reviews content={
           [
             { name: "arnob", comment: "hello" },
@@ -71,6 +70,7 @@ const Nav = () => {
           ]
         }></Reviews>
       </Drawer >
+      <Outlet ></Outlet>
     </>
   )
 }

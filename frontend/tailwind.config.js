@@ -10,7 +10,7 @@ export default {
         istok: ['"Istok Web"', 'sans-serif'],
       },
       backgroundImage: {
-        'wheatBg': "url('./src/assets/BLACKWHEAT.jpg')"
+        'wheatBg': "url('./src/assets/recipe.jpg')"
       }
     },
   },
